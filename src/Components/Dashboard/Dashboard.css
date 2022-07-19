@@ -1,11 +1,262 @@
 
-
 .bg-dashboard{
-    background-color: #040F2E;;
+
     display:flex;
-    justify-content:right;
-    width:90vw;
+    justify-content:space-around;
+    width:85vw;
     height:100vh;
-    margin-left:2em;
+    margin-left:0.5em;
     
+    
+}
+.left-dashboard{
+    
+    display:flex;
+    justify-content:space-around;
+    width:48%;
+    flex-direction: column;
+}
+
+.recent-launches{
+    height:40%;
+    width:100%;
+    background-color: #040F2E;
+    display:flex;
+    border-radius: 1em;
+    flex-direction: column;
+   
+    
+    
+}
+.recent-title{
+    width:100%;
+    height:30%;
+    color:white; 
+   
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+
+}
+.recent-values-area{ 
+   
+    width:100%;
+    height:70%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+   
+    
+    
+}
+.recent-values{ 
+    
+    font-size :0.7em;
+    list-style-type: none;
+    color:white;
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    
+    
+}
+.recent-date{
+    display:flex;
+    font-weight: bold;
+    
+
+}
+
+.activity{
+    height:58%;
+    background-color: #040F2E;
+    display:flex;
+    border-radius: 1em;
+    color: #fff;
+    font-size: 0.8em;
+    justify-content:center;
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    flex-direction: column;
+
+    
+}
+.activity-content{
+    height:85%;
+    
+    display:flex;
+    border-radius: 1em;
+    color: #fff;
+    
+    
+}
+.activity-title{
+    height:5%;
+    
+    display:flex;
+    border-radius: 1em;
+    color: #fff;
+    align-items: center;
+    justify-content:center;
+    
+    
+}
+
+.right-dashboard{
+    display:flex;
+    justify-content:space-around;
+    width:50%;
+    flex-direction: column;
+}
+.next-launches{
+    height:68%;
+    width:100%;
+    background-color: #040F2E;
+    display:flex;
+    flex-direction: column;
+    border-radius: 2em;
+    
+    
+}
+.next-title{
+    
+    height:15%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    color: #fff;
+    font-family:  'Open Sans';
+    font-weight: lighter;
+}
+.next-values{
+    
+    
+    list-style-type:none;
+    color: #fff;
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+
+    justify-content:center;
+    
+    
+}
+.next-content{
+   
+    width:100%;
+    height:70%;
+    list-style-type:none;
+    color: #fff;
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+      
+}
+.next-date{
+    font-weight: bold;
+    display: flex;
+    
+}
+.next-mission{
+    margin-top:0.7em;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+.next-provider-vehicle{
+    font-weight: light;
+    font-size: 1.1em;
+
+}
+.next-location{
+    width:100%;
+    margin-top:1em;
+    font-weight: lighter;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.next-description{
+    margin-top:1.5em;
+    font-weight: lighter;
+    font-size: 0.7em;
+    width:70%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.upcoming{
+    height:30%;
+    background-color: #040F2E;
+    display:flex;
+    border-radius: 2em;
+    color: #fff;
+    font-size: 0.8em;
+    justify-content:center;
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    flex-direction: column;
+    align-items: center;
+} 
+.upcoming-values{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    
+} 
+.upcoming-date{
+   font-weight: bold;
+} 
+.upcoming-provider{
+    margin-left: 1.5em;
+
+}
+.upcoming-mission{
+    margin-left: 1.5em;
+    font-weight: bolder;
+}
+
+.activity-left{
+   
+    width: 60%;
+    height: 90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.activity-icons{
+    margin:0.4em;
+}
+.activity-values{
+    color:white;
+    list-style-type:none;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin:1em;
+}
+.activity-label{
+    font-size: 0.8em;
+}
+.activity-num{
+    color:white;
+    font-weight:bold;
+    font-size:2em;
+}
+.activity-right{
+    
+    width: 60%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:start;
+
+
 }
