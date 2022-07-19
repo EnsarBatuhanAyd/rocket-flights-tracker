@@ -1,0 +1,11 @@
+
+
+.bg-dashboard{
+    background-color: #040F2E;;
+    display:flex;
+    justify-content:right;
+    width:90vw;
+    height:100vh;
+    margin-left:2em;
+    
+}
