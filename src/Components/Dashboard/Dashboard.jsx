@@ -2,7 +2,40 @@ import "./Dashboard.css";
 import sat from "./../../Images/sat.png";
 import antenna from "./../../Images/antenna.png";
 import launchpad from "./../../Images/launchpad.png";
+import firebase from 'firebase/compat/app';
+import "firebase/compat/firestore";
+// import firebase from "./../Firestore/Firestore";
+
+
 export default function Dashboard() {
+  const config = {
+    
+    databaseURL: "https://rocketflightdates-default-rtdb.firebaseio.com",
+    projectId: "rocketflightdates",
+   
+ };
+ firebase.initializeApp(config);
+  const db = firebase.firestore();
+  const doc_ref = db.collection("Launches");
+
+  // const doc_ref1 = doc_ref.doc("next-launches");
+  const doc_ref1 = doc_ref.doc("all-launches");
+  // const doc_ref1 = doc_ref.doc("recent-launches");
+  
+  
+  const doc_ref2 = doc_ref1.collection("data");
+  console.log("Data Pulling!");
+  doc_ref2.get().then((snapshot) => {
+    const data = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+  
+    console.log(data);
+  });
+
+
+
   return (
     <>
       <div className="bg-dashboard">
