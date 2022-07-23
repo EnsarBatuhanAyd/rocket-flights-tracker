@@ -4,58 +4,18 @@ import antenna from "./../../Images/antenna.png";
 import launchpad from "./../../Images/launchpad.png";
 import firebase from 'firebase/compat/app';
 import "firebase/compat/firestore";
-// import firebase from "./../Firestore/Firestore";
 
-
+import RecentLaunch from "../RecentLaunch/RecentLaunch";
+import NextLaunch from "../NextLaunch/NextLaunch"
 export default function Dashboard() {
-  const config = {
-    
-    databaseURL: "https://rocketflightdates-default-rtdb.firebaseio.com",
-    projectId: "rocketflightdates",
-   
- };
- firebase.initializeApp(config);
-  const db = firebase.firestore();
-  const doc_ref = db.collection("Launches");
-
-  // const doc_ref1 = doc_ref.doc("next-launches");
-  const doc_ref1 = doc_ref.doc("all-launches");
-  // const doc_ref1 = doc_ref.doc("recent-launches");
-  
-  
-  const doc_ref2 = doc_ref1.collection("data");
-  console.log("Data Pulling!");
-  doc_ref2.get().then((snapshot) => {
-    const data = snapshot.docs.map((doc) => ({
-      id: doc.id,
-      ...doc.data(),
-    }));
-  
-    console.log(data);
-  });
-
-
+ 
 
   return (
     <>
       <div className="bg-dashboard">
         <div className="left-dashboard">
           <div className="recent-launches">
-            <div className="recent-title">
-              <p>Recent Launches</p>
-            </div>
-            <div className="recent-values-area">
-              <ul className="recent-values">
-                <li className="recent-date">JUN 12</li>
-                <li className="recent-name">TROPICS Flight 1</li>
-                <li className="recent-date">JUN 12</li>
-                <li className="recent-name">Nilesat 301</li>
-                <li className="recent-date">JUN 12</li>
-                <li className="recent-name">Shenzhou-14</li>
-                <li className="recent-date">JUN 12</li>
-                <li className="recent-name">NS-21</li>
-              </ul>
-            </div>
+            <RecentLaunch></RecentLaunch>
           </div>
           <div className="activity">
             <div className="activity-title">
@@ -84,28 +44,7 @@ export default function Dashboard() {
         </div>
         <div className="right-dashboard">
           <div className="next-launches">
-            <div className="next-title">
-              <p>Next Launch</p>
-            </div>
-            <div className="next-content">
-              <ul className="next-values">
-                <li className="next-weather">sun</li>
-                <li className="next-date">JUN 17</li>
-                <li className="next-time">04.50 PM</li>
-
-                <li className="next-mission">MEASAT-3D</li>
-                <li className="next-provider-vehicle">
-                  Arianespace - Ariane 5
-                </li>
-                <li className="next-location">
-                  ELA-3, Guiana Space Centre French Guiana
-                </li>
-                <li className="next-description">
-                  Sierra Nevada confirms ULA will launch first two Dream Chaser
-                  cargo missions (SpaceflightNow)
-                </li>
-              </ul>
-            </div>
+            <NextLaunch></NextLaunch>
           </div>
           <div className="upcoming">
             <div className="upcoming-title">

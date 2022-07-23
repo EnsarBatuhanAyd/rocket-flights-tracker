@@ -1,0 +1,49 @@
+.bg-RecentLaunch{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    flex-direction: column;
+}
+.recent-title{
+    width:100%;
+    height:20%;
+    color:#ffffff; 
+  
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.recent-values-area {
+    width:100%;
+    height:80%;
+    color:white; 
+    
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.recent-values{ 
+    
+    font-size :0.6em;
+    list-style-type: none;
+    color:white;
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    
+    
+}
+.recent-date{
+    display:flex;
+    font-weight: bold;
+    
+
+}
