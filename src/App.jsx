@@ -1,15 +1,21 @@
-import Dashboard from "./Components/Dashboard/Dashboard"
-import './App.css'
-import Sidebar from "./Components/Sidebar/Sidebar"
-
-export default function App() {
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import Launches from "./Pages/Launches/Launches";
+function App() {
   return (
-    
-    <>
-      <div className="App-header">
-      <Sidebar/>
-      <Dashboard />
-      </div>
-    </>
-  )
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    <Router>
+      <Switch>
+      <Route path="/launches">
+          <Launches/>
+        </Route>
+        <Route path="/">
+          <Dashboard />
+        </Route>
+      </Switch>
+    </Router>
+  );
+}
+
+export default App;

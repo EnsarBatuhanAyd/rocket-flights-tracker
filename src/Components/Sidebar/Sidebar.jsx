@@ -8,8 +8,8 @@ const Sidebar =() => {
         <div className='logo-sidebar'></div>
         <div >
         <ul className='navigate-sidebar'>
-          <button  className='sidebar-button'><li>Dashboard</li></button>
-          <button className='sidebar-button'><li>Launches</li></button>
+         <a href='/'> <button  className='sidebar-button'><li>Dashboard</li></button></a>
+         <a href='/launches'><button className='sidebar-button'><li>Launches</li></button></a>
           <button className='sidebar-button'><li>Satellites</li></button>
           <button className='sidebar-button'><li>Stations</li></button>
           <button className='sidebar-button'><li>Vehicles</li></button>

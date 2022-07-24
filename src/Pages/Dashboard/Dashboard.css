@@ -1,0 +1,103 @@
+
+.bg-page{
+
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    background-color: #000000;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+
+}
+.bg-sidebar-area{
+    width: 15vw;
+    height: 100%;
+   
+}
+
+
+
+.bg-dashboard{
+    
+    display:flex;
+    justify-content:space-around;
+    width:85vw;
+    height:100vh;
+    margin-left:0.5em;
+    
+    
+}
+.left-dashboard{
+    
+    display:flex;
+    justify-content:space-around;
+    width:48%;
+    flex-direction: column;
+}
+
+.recent-launches{
+    height:40%;
+    width:100%;
+    background-color: #040F2E;
+    display:flex;
+    border-radius: 1em;
+    flex-direction: column;
+   
+}
+
+
+.activity{
+    height:58%;
+    background-color: #040F2E;
+    display:flex;
+    border-radius: 1em;
+    color: #fff;
+    font-size: 0.8em;
+    justify-content:center;
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    flex-direction: column;
+
+    
+}
+
+
+.right-dashboard{
+    display:flex;
+    justify-content:space-around;
+    width:50%;
+    flex-direction: column;
+}
+.upcoming{
+    height:30%;
+    background-color: #040F2E;
+    display:flex;
+    border-radius: 2em;
+    color: #fff;
+    font-size: 0.8em;
+    justify-content:center;
+    font-family:  'Open Sans';
+    font-weight: lighter;
+    flex-direction: column;
+    align-items: center;
+} 
+.upcoming-values{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    
+} 
+.upcoming-date{
+   font-weight: bold;
+} 
+.upcoming-provider{
+    margin-left: 1.5em;
+
+}
+.upcoming-mission{
+    margin-left: 1.5em;
+    font-weight: bolder;
+}

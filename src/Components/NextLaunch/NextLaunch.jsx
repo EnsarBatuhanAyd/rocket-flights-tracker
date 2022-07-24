@@ -2,6 +2,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import { useState } from "react";
 import "./NextLaunch.css";
+import sunny from "./../../Images/sunny.png";
 
 const NextLaunch = () => {
   const [NextMission, setNextMission] = useState("");
@@ -50,12 +51,18 @@ const NextLaunch = () => {
       </div>
       <div className="next-content">
         <ul className="next-values">
-          <li className="next-weather">{NextWeather}</li>
+          <li className="next-weather">
+            {" "}
+            <img className="next-weather-icons" src={sunny}></img>
+            {NextWeather}
+          </li>
           <li className="next-date">{NextDate}</li>
           <li className="next-time">{NextTime}</li>
 
           <li className="next-mission">{NextMission}</li>
-          <li className="next-provider-vehicle">{NextCompany}-{NextVehicle}</li>
+          <li className="next-provider-vehicle">
+            {NextCompany}-{NextVehicle}
+          </li>
           <li className="next-location">{NextLocation}</li>
           <li className="next-description">{NextDescription}</li>
         </ul>
