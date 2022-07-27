@@ -29,7 +29,7 @@ const RecentLaunch = () => {
 
   const doc_ref1 = doc_ref.doc("recent-launches");
 
-  const doc_ref2 = doc_ref1.collection("data");
+  const doc_ref2 = doc_ref1.collection("data").orderBy("Date", "desc");
   console.log("Data Pulling!");
   doc_ref2.get().then((snapshot) => {
     const data = snapshot.docs.map((doc) => ({
